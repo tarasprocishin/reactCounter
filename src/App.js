@@ -13,7 +13,8 @@ class App extends React.Component {
 
   increment = () => {
     this.setState(prevState => {
-      let number = prevState.number + 1
+      let number = prevState.number;
+      prevState.toglle ? number = number + 1: number = number;
 
       if (number >= 10){
         alert('your put maximum');
@@ -24,9 +25,11 @@ class App extends React.Component {
   }  
 
   decrement = () => {
-    this.setState(prevState => ({
-        number: prevState.number - 1
-      }))
+    this.setState(prevState => {
+      if (prevState.toglle){
+        return { number: prevState.number - 1 }
+      }
+    })
   } 
 
   toglleVive = () => {
