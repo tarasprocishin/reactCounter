@@ -1,1 +1,1 @@
-# [DEMO LINKS](https://tarasprocishin.github.io/react_counter/)
+### [DEMO LINKS](https://tarasprocishin.github.io/react_counter/)
